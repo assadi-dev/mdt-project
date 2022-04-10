@@ -9,7 +9,8 @@ use Symfony\Component\Routing\Annotation\Route;
 class MainController extends AbstractController
 {
     /**
-     * @Route("/", name="app_main")
+     * 
+     * @Route("/{reactRouting}", name="app_main", requirements={"reactRouting"="^(?!api).+"}, defaults={"reactRouting": null})
      */
     public function index(): Response
     {
