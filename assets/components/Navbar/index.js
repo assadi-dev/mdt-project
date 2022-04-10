@@ -4,11 +4,12 @@ import styled from "styled-components";
 const NavContainer = styled.nav`
   background-color: #444;
   width: 100%;
- 
+ position:sticky;
   color: #fff;
-  height 60px;
+  height 70px;
   display:flex;
   align-items:center;
+  z-index:55;
  
 `;
 
@@ -37,9 +38,10 @@ const Right = styled.div`
 `;
 
 const Photo = styled.img`
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
+  width: 50px;
+  height: 50px;
+
+  object-fit: cover;
 `;
 const Name = styled.p`
   font-size: 1.2rem;
@@ -49,8 +51,11 @@ const Name = styled.p`
   width: 100%;
   right: 0;
   bottom: 0;
-  padding: 1rem;
+  padding: 0.5rem;
+  text-align: center;
 `;
+
+const Title = styled.h2``;
 
 const Navbar = () => {
   return (
@@ -60,7 +65,7 @@ const Navbar = () => {
         <Logo />
       </Left>
       <Middle>
-        <p>CRIMINAL INVESTIGATION BUREAU</p>
+        <Title>CRIMINAL INVESTIGATION BUREAU</Title>
       </Middle>
       <Right>
         <Photo />
