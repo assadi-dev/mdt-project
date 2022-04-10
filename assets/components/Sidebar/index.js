@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Wrapper = styled.div`
   width: 220px;
@@ -43,9 +44,21 @@ const Sidebar = () => {
     <Wrapper>
       <Content>
         <MenuList>
-          <MenuItem>Service</MenuItem>
-          <MenuItem>Effectif</MenuItem>
-          <MenuItem>Document</MenuItem>
+          <MenuItem>
+            {" "}
+            <Link to="/">Accueil</Link>
+          </MenuItem>
+          <MenuItem>
+            {" "}
+            <Link to="/services">Service</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/effectifs">Effectif</Link>
+          </MenuItem>
+          <MenuItem>
+            {" "}
+            <Link to="/documents">Document</Link>
+          </MenuItem>
         </MenuList>
       </Content>
     </Wrapper>

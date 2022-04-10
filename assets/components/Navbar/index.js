@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const NavContainer = styled.nav`
   background-color: #444;
@@ -62,7 +63,10 @@ const Navbar = () => {
     <NavContainer>
       <Left>
         {" "}
-        <Logo />
+        <Link to="/">
+          {" "}
+          <Logo />
+        </Link>
       </Left>
       <Middle>
         <Title>CRIMINAL INVESTIGATION BUREAU</Title>
