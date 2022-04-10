@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const NavContainer = styled.nav`
-  background-color: #444;
+  background-color: #333840;
   width: 100%;
  position:sticky;
   color: #fff;
@@ -48,12 +48,13 @@ const Name = styled.p`
   font-size: 1.2rem;
   transform: translateY(100%);
   position: absolute;
-  background-color: #444;
+  background-color: #333840;
   width: 100%;
   right: 0;
   bottom: 0;
   padding: 0.5rem;
   text-align: center;
+  border-radius: 0 0 0 5px;
 `;
 
 const Title = styled.h2``;
