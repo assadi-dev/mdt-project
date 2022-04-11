@@ -7,6 +7,7 @@ const Container = styled.div`
   position: relative;
   background-color: grey;
   margin: 1rem;
+  flex-grow: 1;
 `;
 
 const CardEffectif = () => {

@@ -30,7 +30,9 @@ const Layout = () => {
         <Navbar />
         <GridContent>
           <Sidebar />
-          <Outlet />
+          <div style={{ width: "100%" }}>
+            <Outlet />
+          </div>
         </GridContent>
       </Content>
     </Wrapper>
